@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46abb8a3-5210-4e6e-b314-3eb74d7912ae" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VKVFyudhybR6wnrvlz6akFMWkg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jan.secondweek.sparsearray" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA WorkSpace\DataStructrue\src\jan\secondweek\stack" />
+      <recent name="D:\IDEA WorkSpace\DataStructrue\src\jan\secondweek\linkedlist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="CircleArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jan.secondweek.queue.CircleArrayQueueDemo" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jan.secondweek.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dec.Demo" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jan.secondweek.stack.LinkedListStackDemo" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jan.secondweek.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jan.secondweek.linkedlist.SingleLinkedListDemo" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jan.secondweek.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jan.secondweek.sparsearray.SparseArray" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jan.secondweek.sparsearray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.LinkedListStackDemo" />
+        <item itemvalue="Application.SingleLinkedListDemo" />
+        <item itemvalue="Application.CircleArrayQueueDemo" />
+        <item itemvalue="Application.SparseArray" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46abb8a3-5210-4e6e-b314-3eb74d7912ae" name="Default Changelist" comment="" />
+      <created>1577001673780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577001673780</updated>
+      <workItem from="1577001676554" duration="2339000" />
+      <workItem from="1577088418341" duration="1224000" />
+      <workItem from="1578555833019" duration="5260000" />
+      <workItem from="1578816215938" duration="3475000" />
+      <workItem from="1578896011840" duration="9002000" />
+      <workItem from="1579081795302" duration="1916000" />
+      <workItem from="1579162945827" duration="1358000" />
+      <workItem from="1579164434234" duration="215000" />
+      <workItem from="1579164788044" duration="3801000" />
+      <workItem from="1579185403940" duration="16000" />
+      <workItem from="1579185577727" duration="831000" />
+      <workItem from="1579186423454" duration="33000" />
+      <workItem from="1579251449301" duration="2114000" />
+      <workItem from="1579326323773" duration="1800000" />
+      <workItem from="1579595185799" duration="11143000" />
+      <workItem from="1580280884344" duration="607000" />
+      <workItem from="1580715379829" duration="1560000" />
+      <workItem from="1580887108666" duration="606000" />
+      <workItem from="1581000163473" duration="1444000" />
+      <workItem from="1581056998551" duration="1800000" />
+      <workItem from="1582096182591" duration="273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="530" y="17" key="#com.intellij.ide.util.MemberChooser" timestamp="1581000603038">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="530" y="17" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581000603038" />
+    <state x="499" y="106" key="FileChooserDialogImpl" timestamp="1582096516949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582096516949" />
+    <state width="1483" height="155" key="GridCell.Tab.0.bottom" timestamp="1581005154917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581005154917" />
+    <state width="1483" height="155" key="GridCell.Tab.0.center" timestamp="1581005154917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="155" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581005154917" />
+    <state width="1483" height="155" key="GridCell.Tab.0.left" timestamp="1581005154916">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="155" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581005154916" />
+    <state width="1483" height="155" key="GridCell.Tab.0.right" timestamp="1581005154917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="155" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581005154917" />
+    <state width="1483" height="267" key="GridCell.Tab.1.bottom" timestamp="1579271483855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="267" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579271483855" />
+    <state width="1483" height="267" key="GridCell.Tab.1.center" timestamp="1579271483855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="267" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579271483855" />
+    <state width="1483" height="267" key="GridCell.Tab.1.left" timestamp="1579271483855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="267" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579271483855" />
+    <state width="1483" height="267" key="GridCell.Tab.1.right" timestamp="1579271483855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="267" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579271483855" />
+    <state x="154" y="0" key="SettingsEditor" timestamp="1579603369627">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="154" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579603369627" />
+    <state x="0" y="85" width="1536" height="703" key="new project wizard" timestamp="1579186218689">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="85" width="1536" height="703" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1579186218689" />
+    <state x="451" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1581000813944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="451" y="0" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1581000813944" />
+  </component>
+</project>
