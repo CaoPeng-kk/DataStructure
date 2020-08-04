@@ -38,7 +38,6 @@ public class BinarySearch {
             }
             middle = (leftIndex + rightIndex) / 2;
         }
-
         return 0;
     }
 }
