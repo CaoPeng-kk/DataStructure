@@ -1,4 +1,4 @@
-package dec;
+package test;
 
 public class Demo {
 
