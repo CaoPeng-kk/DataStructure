@@ -69,7 +69,7 @@ public class BinaryTreeDemo {
 
         //测试删除结点
         System.out.println("----测试删除结点");
-        binaryTree.deleteNode(monica);
+        binaryTree.deleteNode(ross);
         System.out.println();
 
         binaryTree.preOrder();
@@ -197,6 +197,10 @@ class BinaryTree {
      */
     public void deleteNode(Node targetNode) {
        if (this.root != null) {
+           if (this.root.getNo() == targetNode.getNo()) {
+               root = null;
+               return;
+           }
            this.root.deleteNode(targetNode);
        }
     }
@@ -436,10 +440,6 @@ class Node {
          *
          */
         if (this.left == null && this.right == null) {
-            return;
-        }
-        if (this.no == targetNode.no) {
-            System.out.println("根结点不能删除");
             return;
         }
         if (this.left != null) {
