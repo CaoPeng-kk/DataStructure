@@ -1,6 +1,5 @@
 package jan.secondweek.tree;
 
-import com.sun.org.apache.bcel.internal.generic.GOTO;
 
 /**
  * @Author: caopeng
@@ -41,12 +40,15 @@ public class BinaryTreeDemo {
         //设置根节点
         binaryTree.setRoot(ross);
         //前序遍历
+        System.out.println("----前序遍历");
         binaryTree.preOrder();
         System.out.println();
         //中序遍历
+        System.out.println("----中序遍历");
         binaryTree.infixOrder();
         System.out.println();
         //后序遍历
+        System.out.println("----后序遍历");
         binaryTree.postOrder();
         System.out.println();
 
@@ -61,8 +63,16 @@ public class BinaryTreeDemo {
         System.out.println();
 
         //测试后序二叉查找
-        Node node1 = binaryTree.postOrderSearch(ross);
+        Node node1 = binaryTree.postOrderSearch(chandle);
         System.out.println("后序遍历查找到结点为  " + node1);
+        System.out.println();
+
+        //测试删除结点
+        System.out.println("----测试删除结点");
+        binaryTree.deleteNode(monica);
+        System.out.println();
+
+        binaryTree.preOrder();
         System.out.println();
 
     }
@@ -176,6 +186,19 @@ class BinaryTree {
             System.out.println("二叉树为空");
             return null;
         }
+    }
+
+    /**
+     * @Description: 删除结点方法
+     * @Param:
+     * @return:
+     * @Author: caopeng
+     * @Date: 2020/9/8
+     */
+    public void deleteNode(Node targetNode) {
+       if (this.root != null) {
+           this.root.deleteNode(targetNode);
+       }
     }
 }
 
@@ -374,6 +397,7 @@ class Node {
                 result = this.left.postOrderSearch(nodeNo);
             }
         }
+        //如果左子树找到了 就直接返回
         if (result != null) {
             return result;
         }
@@ -390,6 +414,47 @@ class Node {
             return result;
         }
         return result;
+    }
+
+    /**
+     * @Description: 删除结点方法
+     * @Param:
+     * @return:
+     * @Author: caopeng
+     * @Date: 2020/9/8
+     */
+    public void deleteNode(Node targetNode) {
+        /**
+         * 如果删除的结点是叶子结点，则删除该结点  如果删除的结点是非叶子结点 则删除该树
+         *
+         * 1.先判断此树是否为空树 如果为只有一个root结点的空树 则等价于将此树清空
+         * 2. 因为此二叉树是单向的 所以要判断当前结点的子结点是否为要删除的结点，如果当前结点的左子结点为非空 则this.left = null
+         *    并且返回（结束递归删除）
+         * 3. 判断当前结点的右子结点是否为要删除的结点，如果当前结点的右子结点为非空 则this.left = null
+         * 4. 如果 2 3 都没有删除结点 那就向左子树递归删除
+         * 5. 如果 4 也没有删除结点 那就向右子树递归删除
+         *
+         */
+        if (this.left == null && this.right == null) {
+            return;
+        }
+        if (this.no == targetNode.no) {
+            System.out.println("根结点不能删除");
+            return;
+        }
+        if (this.left != null) {
+            if (this.left.no == targetNode.no) {
+                this.left = null;
+                return;
+            } else if (this.right != null) {
+                if (this.right.no == targetNode.no) {
+                    this.right = null;
+                    return;
+                }
+                this.left.deleteNode(targetNode);
+                this.right.deleteNode(targetNode);
+            }
+        }
     }
 
 }
