@@ -1,4 +1,4 @@
-package jan.secondweek.sort;
+package jan.secondweek.algorithm.sort;
 
 /**
  * @Author: caopeng

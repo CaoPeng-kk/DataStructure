@@ -1,4 +1,4 @@
-package jan.secondweek.query;
+package jan.secondweek.algorithm.query;
 
 /**
  * @Author: caopeng
