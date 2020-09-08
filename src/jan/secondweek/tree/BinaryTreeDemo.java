@@ -19,18 +19,22 @@ public class BinaryTreeDemo {
         Node joey = new Node(3, "Joey");
         Node monica = new Node(4, "Monica");
         Node chandle = new Node(5, "Chandle");
+        Node phebe = new Node(6, "Phebe");
+        Node cat = new Node(7, "cat");
 
         /**
          * 手动创建一个二叉树
-         *              ross(1)
-         *               /    \
-         *       rachel(2)   joey(3)
-         *                   /    \
-         *            chandle(5)   monica(4)
+         *                 ross(1)
+         *               /       \
+         *       rachel(2)       joey(3)
+         *       /    \          /         \
+         *  phebe(6) cat(7)  chandle(5)   monica(4)
          *
          */
         ross.setLeft(rachel);
         ross.setRight(joey);
+        rachel.setLeft(phebe);
+        rachel.setRight(cat);
         joey.setLeft(chandle);
         joey.setRight(monica);
 
@@ -47,18 +51,18 @@ public class BinaryTreeDemo {
         System.out.println();
 
         //测试前序查找
-        Node node2 = binaryTree.preOrderSearch(monica);
-        System.out.println("查找到结点为  " + node2);
+        Node node2 = binaryTree.preOrderSearch(cat);
+        System.out.println("前序遍历查找到结点为  " + node2);
         System.out.println();
 
         //测试中序二叉查找
-        Node node = binaryTree.infixOrderSearch(joey);
-        System.out.println("查找到结点为  " + node);
+        Node node = binaryTree.infixOrderSearch(chandle);
+        System.out.println("中序遍历查找到结点为  " + node);
         System.out.println();
 
         //测试后序二叉查找
-        Node node1 = binaryTree.postOrderSearch(monica);
-        System.out.println("查找到结点为  " + node1);
+        Node node1 = binaryTree.postOrderSearch(ross);
+        System.out.println("后序遍历查找到结点为  " + node1);
         System.out.println();
 
     }
@@ -290,11 +294,11 @@ class Node {
      * @return:
      * @Author: caopeng
      * @Date: 2020/9/7
-     *                           ross(1)
-     *                           /    \
-     *                   rachel(2)   joey(3)
-     *                                /    \
-     *                        chandle(5)   monica(4)
+     *                             ross(1)
+     *                            /       \
+     *                    rachel(2)       joey(3)
+     *                    /    \          /      \
+     *             phebe(6) cat(7)  chandle(5)   monica(4)
      */
     public Node preOrderSearch(Node nodeNo) {
         //先判断当前节点是否等于要查找的 是就返回 不是就递归前序查找
@@ -330,13 +334,16 @@ class Node {
                 result = this.left.infixOrderSearch(nodeNo);
             }
         }
+        if (result != null) {
+            return result;
+        }
         if (this.no == nodeNo.no) {
             result = this;
             return result;
         }
         if (this.right != null) {
             if (this.right.no == nodeNo.no) {
-                result = this.left;
+                result = this.right;
                 return result;
             } else {
                 result = this.right.infixOrderSearch(nodeNo);
@@ -366,6 +373,9 @@ class Node {
             } else {
                 result = this.left.postOrderSearch(nodeNo);
             }
+        }
+        if (result != null) {
+            return result;
         }
         if (this.right != null) {
             if (this.right.no == nodeNo.no) {
