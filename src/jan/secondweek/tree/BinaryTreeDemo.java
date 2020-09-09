@@ -69,7 +69,7 @@ public class BinaryTreeDemo {
 
         //测试删除结点
         System.out.println("----测试删除结点");
-        binaryTree.deleteNode(ross);
+        binaryTree.deleteNode(monica);
         System.out.println();
 
         binaryTree.preOrder();

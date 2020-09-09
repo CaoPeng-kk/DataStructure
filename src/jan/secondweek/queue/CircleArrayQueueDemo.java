@@ -6,7 +6,8 @@ public class CircleArrayQueueDemo {
 
     /*  用数组模拟环形队列
     *
-    * */
+    *
+    */
 
     public static void main(String[] args) {
 
