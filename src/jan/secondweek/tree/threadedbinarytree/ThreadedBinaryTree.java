@@ -218,13 +218,11 @@ class BinaryTree {
         }
 
         //处理后继结点 (第一次pre = null 不会进入 (纠正视频一个bug
-        if (pre != null) {
-            if (pre.getRight() == null) {
-                //将pre的后继结点设置为本结点
-                pre.setRight(targetNode);
-                //设置指向类型
-                pre.setRightType(1);
-            }
+        if (pre != null && pre.getRight() == null) {
+            //将pre的后继结点设置为本结点
+            pre.setRight(targetNode);
+            //设置指向类型
+            pre.setRightType(1);
         }
         // 重要！ 当第一次走到此位置时，将8结点设置为前驱结点(每处理一个结点，就让当前结点成为下一个结点的
         // 前驱结点
