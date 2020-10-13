@@ -8,7 +8,44 @@ package jan.secondweek.tree.threadedbinarytree;
 public class ThreadedBinaryTree {
 
     public static void main(String[] args) {
-        
+
+        //根节点
+        Node ross = new Node(1, "ross");
+
+        Node rachel = new Node(3, "Rachel");
+        Node joey = new Node(6, "Joey");
+        Node chandle = new Node(14, "Chandle");
+        Node phebe = new Node(8, "Phebe");
+        Node cat = new Node(10, "cat");
+
+        /**
+         * 手动创建一个二叉树
+         *                 ross(1)
+         *               /       \
+         *       rachel(3)       joey(6)
+         *       /    \          /
+         *  phebe(8) cat(10)  chandle(14)
+         *
+         */
+        ross.setLeft(rachel);
+        ross.setRight(joey);
+        rachel.setLeft(phebe);
+        rachel.setRight(cat);
+        joey.setLeft(chandle);
+
+        //测试线索化
+        BinaryTree binaryTree = new BinaryTree();
+        //设置根节点
+        binaryTree.setRoot(ross);
+        //线索化操作
+        binaryTree.threadedBinaryTree();
+
+        //检验是否线索化
+        Node leftNode = rachel.getLeft();
+        int leftType = rachel.getLeftType();
+        Node rightNode = rachel.getRight();
+        int rightType = rachel.getRightType();
+        System.out.println("左"+leftNode+"  类型"+leftType+"  |  "+"右"+rightNode+"  类型"+rightType);
     }
     
 }
@@ -181,20 +218,34 @@ class BinaryTree {
             targetNode.setLeftType(1);
         }
 
-        //处理后继结点 (第一次pre = null 不会进入
-        if (pre != null || pre.getRight() == null) {
-            //将pre的后继结点设置为本结点
-            pre.setRight(targetNode);
-            //设置指向类型
-            pre.setRightType(0);
+        //处理后继结点 (第一次pre = null 不会进入 (纠正视频一个bug
+        if (pre != null) {
+            if (pre.getRight() == null) {
+                //将pre的后继结点设置为本结点
+                pre.setRight(targetNode);
+                //设置指向类型
+                pre.setRightType(1);
+            }
         }
-        // 重要！ 当第一次走到此位置时，将8结点设置为前驱结点
+        // 重要！ 当第一次走到此位置时，将8结点设置为前驱结点(每处理一个结点，就让当前结点成为下一个结点的
+        // 前驱结点
         pre = targetNode;
 
         //3. 递归线索化右子树
         if (targetNode.getRight() != null) {
             threadedBinaryTree(targetNode.getRight());
         }
+    }
+
+    /**
+     * @Description: 线索化二叉树无参重载方法
+     * @Param:
+     * @return:
+     * @Author: caopeng
+     * @Date: 2020/10/13
+     */
+    public void threadedBinaryTree() {
+        threadedBinaryTree(root);
     }
 } 
 
