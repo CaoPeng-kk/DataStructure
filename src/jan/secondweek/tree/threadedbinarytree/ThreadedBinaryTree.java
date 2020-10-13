@@ -41,11 +41,13 @@ public class ThreadedBinaryTree {
         binaryTree.threadedBinaryTree();
 
         //检验是否线索化
-        Node leftNode = rachel.getLeft();
-        int leftType = rachel.getLeftType();
-        Node rightNode = rachel.getRight();
-        int rightType = rachel.getRightType();
+        Node leftNode = joey.getLeft();
+        int leftType = joey.getLeftType();
+        Node rightNode = joey.getRight();
+        int rightType = joey.getRightType();
         System.out.println("左"+leftNode+"  类型"+leftType+"  |  "+"右"+rightNode+"  类型"+rightType);
+        System.out.println();
+        binaryTree.threadedOrder(ross);
     }
 }
 
@@ -69,47 +71,32 @@ class BinaryTree {
     }
 
     /**
-     * @Description: 前序遍历二叉树
+     * @Description: 按照线索化二叉树的次序来遍历二叉树
      * @Param:
      * @return:
      * @Author: caopeng
      * @Date: 2020/9/7
      */
-    public void preOrder() {
-        if (this.root != null) {
-            this.root.preOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
-        }
-    }
+    public void threadedOrder(Node root) {
+        Node index = root;
+        Node node = root;
+        while (node != null) {
+            //先循环找到leftType = 1 的结点，第一个找到的就是8
+            //如果lefttype为 1 ，代表左边为线索化之后的有效结点
+            while (node.getLeftType() == 0) {
+                node = node.getLeft();
+            }
 
-    /**
-     * @Description: 中序遍历二叉树
-     * @Param:
-     * @return:
-     * @Author: caopeng
-     * @Date: 2020/9/7
-     */
-    public void infixOrder() {
-        if (this.root != null) {
-            this.root.infixOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
-        }
-    }
+            //此时找到lefttype=1 的结点了 打印输出
+            System.out.println(node);
+            //如果此结点的righttype=1 说明是线索化之后的后继结点 先取到后继结点 然后直接遍历输出
+            while (node.getRightType() == 1) {
+                node = node.getRight();
+                System.out.println(node);
+            }
 
-    /**
-     * @Description: 后序遍历二叉树
-     * @Param:
-     * @return:
-     * @Author: caopeng
-     * @Date: 2020/9/7
-     */
-    public void postOrder() {
-        if (this.root != null) {
-            this.root.postOrder();
-        } else {
-            System.out.println("二叉树为空，无法遍历");
+            //如果righttype不为1 直接将右子树结点置为本结点
+            node = node.getRight();
         }
     }
 
@@ -210,14 +197,14 @@ class BinaryTree {
          * 处理当前结点的前驱结点
          * 以8结点来理解 (8结点的left = null lefttype = 1
          */
-        if (targetNode.getRight() == null) {
+        if (targetNode.getLeft() == null) {
             //设置当前结点的左指针指向前驱结点
             targetNode.setLeft(pre);
             //设置当前结点的左指针指向的类型为指向前驱结点
             targetNode.setLeftType(1);
         }
 
-        //处理后继结点 (第一次pre = null 不会进入 (纠正视频一个bug
+        //处理后继结点 (第一次pre = null 不会进入
         if (pre != null && pre.getRight() == null) {
             //将pre的后继结点设置为本结点
             pre.setRight(targetNode);
