@@ -47,7 +47,6 @@ public class ThreadedBinaryTree {
         int rightType = rachel.getRightType();
         System.out.println("左"+leftNode+"  类型"+leftType+"  |  "+"右"+rightNode+"  类型"+rightType);
     }
-    
 }
 
 /**
