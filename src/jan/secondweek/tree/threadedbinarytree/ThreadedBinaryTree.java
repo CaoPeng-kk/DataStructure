@@ -45,7 +45,7 @@ public class ThreadedBinaryTree {
         int leftType = joey.getLeftType();
         Node rightNode = joey.getRight();
         int rightType = joey.getRightType();
-        System.out.println("左"+leftNode+"  类型"+leftType+"  |  "+"右"+rightNode+"  类型"+rightType);
+        System.out.println("左" + leftNode + "  类型"+ leftType + "  |  "+"右"+rightNode+"  类型"+rightType);
         System.out.println();
         binaryTree.threadedOrder(ross);
     }
@@ -64,12 +64,6 @@ class BinaryTree {
 
     //为了实现线索化，需要创建要给指向当前结点的前驱结点的指针
     //在进行线索化时 pre总是指向前驱结点
-    private Node pre = null;
-
-    public void setRoot(Node root) {
-        this.root = root;
-    }
-
     /**
      * @Description: 按照线索化二叉树的次序来遍历二叉树
      * @Param:
@@ -83,7 +77,7 @@ class BinaryTree {
         while (node != null) {
             //先循环找到leftType = 1 的结点，第一个找到的就是8
             //如果lefttype为 1 ，代表左边为线索化之后的有效结点
-            while (node.getLeftType() == 0) {
+            while (node.getLeft() != null && node.getLeftType() == 0) {
                 node = node.getLeft();
             }
 
@@ -95,9 +89,15 @@ class BinaryTree {
                 System.out.println(node);
             }
 
-            //如果righttype不为1 直接将右子树结点置为本结点
+            //如果righttype不为1 直接将右子树结点置为本结点  从这个节点之后开始顺序遍历
             node = node.getRight();
         }
+    }
+
+    private Node pre = null;
+
+    public void setRoot(Node root) {
+        this.root = root;
     }
 
     /**
@@ -180,19 +180,18 @@ class BinaryTree {
      *      8    10  14
      *
      * 此树中序遍历的结果为 8，3，10，1，14，6
-     *
+     * 线索化二叉树 主要就是将二叉树叶子节点的左右空指针域存上某种遍历次序下的前驱后继节点
      */
     public void threadedBinaryTree(Node targetNode) {
-
-        //如果要线索化的结点为空，则直接返回
+        // 如果要线索化的结点为空，则直接返回
         if (targetNode == null) {
             return;
         }
-        //1. 递归先线索化左子树
+        // 1. 递归先线索化左子树
         if (targetNode.getLeft() != null) {
             threadedBinaryTree(targetNode.getLeft());
         }
-        //2. 线索化本结点(little hard
+        // 2. 线索化本结点(little hard
         /**
          * 处理当前结点的前驱结点
          * 以8结点来理解 (8结点的left = null lefttype = 1
@@ -211,8 +210,11 @@ class BinaryTree {
             //设置指向类型
             pre.setRightType(1);
         }
-        // 重要！ 当第一次走到此位置时，将8结点设置为前驱结点(每处理一个结点，就让当前结点成为下一个结点的
-        // 前驱结点
+
+        /**
+         * 重要！ 当第一次走到此位置时，将8结点设置为前驱结点(每处理一个结点，就让当前结点成为下一个结点的
+         * 前驱结点
+         */
         pre = targetNode;
 
         //3. 递归线索化右子树
@@ -322,8 +324,6 @@ class Node {
     public void threadedBinaryTree() {
         
     }
-    
-    
     
     /**
      * @Description: 二叉树的前序遍历
@@ -520,5 +520,4 @@ class Node {
             }
         }
     }
-
 }

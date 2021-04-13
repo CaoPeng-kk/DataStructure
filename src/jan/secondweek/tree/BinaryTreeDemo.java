@@ -52,29 +52,28 @@ public class BinaryTreeDemo {
         binaryTree.postOrder();
         System.out.println();
 
-        //测试前序查找
-        Node node2 = binaryTree.preOrderSearch(cat);
-        System.out.println("前序遍历查找到结点为  " + node2);
-        System.out.println();
-
-        //测试中序二叉查找
-        Node node = binaryTree.infixOrderSearch(chandle);
-        System.out.println("中序遍历查找到结点为  " + node);
-        System.out.println();
-
-        //测试后序二叉查找
-        Node node1 = binaryTree.postOrderSearch(chandle);
-        System.out.println("后序遍历查找到结点为  " + node1);
-        System.out.println();
-
-        //测试删除结点
-        System.out.println("----测试删除结点");
-        binaryTree.deleteNode(monica);
-        System.out.println();
-
-        binaryTree.preOrder();
-        System.out.println();
-
+//        //测试前序查找
+//        Node node2 = binaryTree.preOrderSearch(cat);
+//        System.out.println("前序遍历查找到结点为  " + node2);
+//        System.out.println();
+//
+//        //测试中序二叉查找
+//        Node node = binaryTree.infixOrderSearch(chandle);
+//        System.out.println("中序遍历查找到结点为  " + node);
+//        System.out.println();
+//
+//        //测试后序二叉查找
+//        Node node1 = binaryTree.postOrderSearch(chandle);
+//        System.out.println("后序遍历查找到结点为  " + node1);
+//        System.out.println();
+//
+//        //测试删除结点
+//        System.out.println("----测试删除结点");
+//        binaryTree.deleteNode(monica);
+//        System.out.println();
+//
+//        binaryTree.preOrder();
+//        System.out.println();
     }
 
 
