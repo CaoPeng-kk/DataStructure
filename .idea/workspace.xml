@@ -5,23 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46abb8a3-5210-4e6e-b314-3eb74d7912ae" name="Default Changelist" comment="优化 线索化二叉树">
-      <change afterPath="$PROJECT_DIR$/.idea/MybatisStateComponent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jan/secondweek/algorithm/sort/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="46abb8a3-5210-4e6e-b314-3eb74d7912ae" name="Default Changelist" comment="增加堆排序算法">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jan/secondweek/algorithm/dac/Hanoitower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jan/secondweek/tree/HuffmanTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/dec/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/dec/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/dec/Sub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/queue/CircleArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/queue/CircleArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/queue/CircleArrayQueueDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/queue/CircleArrayQueueDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/sort/InsertSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/sort/QuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/sparsearray/SparseArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructrue/jan/secondweek/sparsearray/SparseArray.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +41,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -64,13 +52,26 @@
       <recent name="D:\IDEA WorkSpace\DataStructrue\src\jan\secondweek\linkedlist" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Application.Hanoitower">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dec.Demo" />
       <module name="DataStructrue" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hanoitower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jan.secondweek.algorithm.dac.Hanoitower" />
+      <module name="DataStructrue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jan.secondweek.algorithm.dac.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,19 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jan.secondweek.linkedlist.SingleLinkedListDemo" />
-      <module name="DataStructrue" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jan.secondweek.linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ThreadedBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jan.secondweek.tree.threadedbinarytree.ThreadedBinaryTree" />
       <module name="DataStructrue" />
@@ -132,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hanoitower" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.ThreadedBinaryTree" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.LinkedListStackDemo" />
-        <item itemvalue="Application.SingleLinkedListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +160,10 @@
       <workItem from="1581056998551" duration="1800000" />
       <workItem from="1582096182591" duration="273000" />
       <workItem from="1618300937655" duration="190000" />
-      <workItem from="1618301156926" duration="14876000" />
+      <workItem from="1618301156926" duration="28997000" />
+      <workItem from="1618551479863" duration="43000" />
+      <workItem from="1618551565388" duration="8202000" />
+      <workItem from="1618843293080" duration="7096000" />
     </task>
     <task id="LOCAL-00001" summary="优化 线索化二叉树">
       <created>1618302403407</created>
@@ -181,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618302403407</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加堆排序算法">
+      <created>1618392231666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618392231666</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加堆排序算法">
+      <created>1618449973870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618449973870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +206,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="优化 线索化二叉树" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化 线索化二叉树" />
+    <MESSAGE value="增加堆排序算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加堆排序算法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1618383981594">
@@ -212,54 +218,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1618303967634" />
-    <state width="1493" height="187" key="GridCell.Tab.0.bottom" timestamp="1618390624495">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618390624495" />
-    <state width="1493" height="187" key="GridCell.Tab.0.center" timestamp="1618390624495">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618390624495" />
-    <state width="1493" height="187" key="GridCell.Tab.0.left" timestamp="1618390624495">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618390624495" />
-    <state width="1493" height="187" key="GridCell.Tab.0.right" timestamp="1618390624495">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618390624495" />
-    <state width="1493" height="137" key="GridCell.Tab.1.bottom" timestamp="1618385392696">
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.1.bottom" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618385392696" />
-    <state width="1493" height="137" key="GridCell.Tab.1.center" timestamp="1618385392696">
+    <state width="1493" height="213" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.1.center" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618385392696" />
-    <state width="1493" height="137" key="GridCell.Tab.1.left" timestamp="1618385392696">
+    <state width="1493" height="213" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.1.left" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618385392696" />
-    <state width="1493" height="137" key="GridCell.Tab.1.right" timestamp="1618385392696">
+    <state width="1493" height="213" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state width="1493" height="213" key="GridCell.Tab.1.right" timestamp="1618912106793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="137" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618385392696" />
-    <state x="262" y="0" key="SettingsEditor" timestamp="1618385857401">
+    <state width="1493" height="213" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618912106793" />
+    <state x="262" y="0" key="SettingsEditor" timestamp="1618551493866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="262" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618385857401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618302411930">
+    <state x="262" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618551493866" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618449990591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618302411930" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618449990591" />
+    <state width="106" height="38" key="documentation.popup.size" timestamp="1618477540595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="106" height="38" key="documentation.popup.size/0.0.1536.824@0.0.1536.824" timestamp="1618477540595" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1618296709428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618296709428" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618380207290">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618479448028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618380207290" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618479448028" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -293,6 +303,26 @@
           <url>file://$PROJECT_DIR$/src/jan/secondweek/tree/threadedbinarytree/ThreadedBinaryTree.java</url>
           <line>77</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/jan/secondweek/algorithm/dac/Hanoitower.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/jan/secondweek/algorithm/dac/Hanoitower.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/jan/secondweek/algorithm/dac/Hanoitower.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/jan/secondweek/algorithm/dac/Hanoitower.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
