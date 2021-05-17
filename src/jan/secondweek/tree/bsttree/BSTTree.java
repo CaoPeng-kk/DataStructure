@@ -20,7 +20,12 @@ public class BSTTree {
 //        binarySortTree.add(new Node(arr[1]));
         binarySortTree.infixOrder();
         System.out.println();
+        // 测试查找节点
         System.out.println(binarySortTree.searchNode(5));
+        // 测试查找要删除节点的父节点
+        System.out.println();
+        System.out.println(binarySortTree.searchParentNode(1));
+
     }
 }
 
@@ -57,6 +62,13 @@ class BinarySortTree {
      */
     public Node searchNode(int value) {
         return root.searchDeleteNode(value);
+    }
+
+    /**
+     * 查找要删除节点的父节点
+     */
+    public Node searchParentNode(int value) {
+        return root.searchDeleteNodeParent(value);
     }
 }
 
@@ -132,7 +144,20 @@ class Node {
     /**
      * 查找要删除节点的父节点
      */
-    public Node searchDeleteNodeParent() {
+    public Node searchDeleteNodeParent(int value) {
+        if (this.left != null && this.left.value == value || this.right != null && this.right.value == value) {
+            return this;
+        } else if (value == this.value) {
+            return null;
+        } else if (value < this.value) {
+            if (this.left != null) {
+                return this.left.searchDeleteNodeParent(value);
+            }
+        } else {
+            if (this.right != null) {
+                return this.right.searchDeleteNodeParent(value);
+            }
+        }
         return null;
     }
 
