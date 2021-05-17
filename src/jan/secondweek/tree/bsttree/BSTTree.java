@@ -1,5 +1,7 @@
 package jan.secondweek.tree.bsttree;
 
+import com.sun.org.glassfish.gmbal.Description;
+
 /**
  * @Description: 二叉排序树BST
  * @Date: Created in 15:49 2021/5/13
@@ -17,6 +19,8 @@ public class BSTTree {
 //        binarySortTree.add(new Node(arr[0]));
 //        binarySortTree.add(new Node(arr[1]));
         binarySortTree.infixOrder();
+        System.out.println();
+        System.out.println(binarySortTree.searchNode(5));
     }
 }
 
@@ -46,6 +50,13 @@ class BinarySortTree {
             System.out.println("二叉排序树为空, 无法遍历");
         }
         root.infixOrder();
+    }
+
+    /**
+     * 查找要删除的节点
+     */
+    public Node searchNode(int value) {
+        return root.searchDeleteNode(value);
     }
 }
 
@@ -92,6 +103,37 @@ class Node {
                 this.right = node;
             }
         }
+    }
+
+    /**
+     * @Description: 查找要删除的节点
+     * @param
+     * @Return: jan.secondweek.tree.bsttree.Node
+     * @Author: caopeng
+     * @Date: 2021/5/17 22:07
+     */
+    public Node searchDeleteNode(int value) {
+        // 将参数值与本节点值比较
+        if (value == this.value) {
+            return this;
+        }
+        if (value < this.value) {
+            if (this.left != null) {
+                return this.left.searchDeleteNode(value);
+            }
+        } else {
+            if (this.right != null) {
+                return this.right.searchDeleteNode(value);
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 查找要删除节点的父节点
+     */
+    public Node searchDeleteNodeParent() {
+        return null;
     }
 
     /**
