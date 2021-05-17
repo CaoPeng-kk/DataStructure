@@ -143,6 +143,11 @@ class Node {
 
     /**
      * 查找要删除节点的父节点
+     *          7
+     *        /  \
+     *       3    10
+     *      / \   /  \
+     *    1   5  9    12
      */
     public Node searchDeleteNodeParent(int value) {
         if (this.left != null && this.left.value == value || this.right != null && this.right.value == value) {
