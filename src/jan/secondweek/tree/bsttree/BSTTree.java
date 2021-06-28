@@ -59,6 +59,9 @@ class BinarySortTree {
      * 查找要删除的节点
      */
     public Node searchNode(int value) {
+        if (root == null) {
+            return null;
+        }
         return root.searchDeleteNode(value);
     }
 
@@ -66,7 +69,17 @@ class BinarySortTree {
      * 查找要删除节点的父节点
      */
     public Node searchParentNode(int value) {
+        if (root == null) {
+            return null;
+        }
         return root.searchDeleteNodeParent(value);
+    }
+
+    /**
+     * 删除叶子节点
+     */
+    public void deleteLeafNode(int value) {
+
     }
 }
 

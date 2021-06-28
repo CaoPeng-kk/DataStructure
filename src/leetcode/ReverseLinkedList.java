@@ -1,7 +1,5 @@
 package leetcode;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 /**
  * @Description: leetcode 反转链表
  * @Date: Created in 23:45 2021/5/30
