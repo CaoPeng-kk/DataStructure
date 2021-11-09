@@ -15,7 +15,6 @@ public class LeetCode94 {
     /**
      *
      */
-
     public static void main(String[] args) throws InterruptedException {
         TreeNode root = new TreeNode(1);
         TreeNode two = new TreeNode(2);
